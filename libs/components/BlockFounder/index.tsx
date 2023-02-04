@@ -3,6 +3,7 @@ import BubbleContainer from "@elements/BubbleContainer"
 import IconicTitle from "@elements/IconicTitle"
 import PageSection from "@elements/Section"
 import { nanoid } from "nanoid"
+import Link from "next/link"
 import { FiHeart, FiSunrise, FiSmile, FiSunset, FiMoreHorizontal, FiArchive, FiLogOut, FiDollarSign } from "react-icons/fi"
 
 interface BlockFounderProps {
@@ -31,9 +32,18 @@ const BlockFounder = ({founded}: BlockFounderType) => {
                         return (
                             <Box key={nanoid()}
                             _notLast={{ borderBottom:'1px dashed gray', pb:4, mb:4 }} >
-                                <Text fontSize={20} fontWeight={600}
-                                    display= 'inline-block'
-                                >{item.companyName}</Text>
+                                {
+                                    item.url ?
+                                        <Link href={item.url} about={item.urlCaption}>
+                                            <Text fontSize={20} fontWeight={600}
+                                                display= 'inline-block'
+                                            >{item.companyName}</Text>
+                                        </Link>
+                                    :
+                                        <Text fontSize={20} fontWeight={600}
+                                            display= 'inline-block'
+                                        >{item.companyName}</Text>
+                                }
                                 <Circle as={item.makeMoney == 'good'    ?   FiSunrise : 
                                             item.makeMoney == 'medium'  ?   FiSmile :
                                             item.makeMoney == 'bad'     ?   FiSunset :
