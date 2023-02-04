@@ -1,4 +1,4 @@
-import { Box, Circle, Text } from "@chakra-ui/react"
+import { Box, Circle, Text, Tooltip } from "@chakra-ui/react"
 import BubbleContainer from "@elements/BubbleContainer"
 import IconicTitle from "@elements/IconicTitle"
 import PageSection from "@elements/Section"
@@ -33,11 +33,15 @@ const BlockFounder = ({founded}: BlockFounderType) => {
                             <Box key={nanoid()}
                             _notLast={{ borderBottom:'1px dashed gray', pb:4, mb:4 }} >
                                 {
-                                    item.url ?
-                                        <Link href={item.url} about={item.urlCaption}>
-                                            <Text fontSize={20} fontWeight={600}
-                                                display= 'inline-block'
-                                            >{item.companyName}</Text>
+                                    item.url !== "" ?
+                                        <Link href={item.url} passHref>
+                                            <Tooltip hasArrow
+                                                label={item.urlCaption}>
+                                                <Text fontSize={20} fontWeight={600}
+                                                    display= 'inline-block'
+                                                    cursor='pointer'
+                                                >{item.companyName}</Text>
+                                            </Tooltip>
                                         </Link>
                                     :
                                         <Text fontSize={20} fontWeight={600}
