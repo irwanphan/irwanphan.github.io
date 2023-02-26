@@ -1,6 +1,7 @@
 import { Box, Flex, HStack } from "@chakra-ui/react"
 import SocialAnchor from "@elements/SocialAnchor"
 import { FiMail, FiGithub, FiLinkedin, FiFeather, FiDribbble, FiInstagram } from "react-icons/fi"
+import { FaDev } from "react-icons/fa"
 import { InView, useInView } from "react-intersection-observer"
 
 const SocialAnchorMenu = () => {
@@ -50,8 +51,8 @@ const SocialAnchorMenu = () => {
                             <SocialAnchor href='https://behance.net/irwanphan' tooltip='behance'>
                                 <FiFeather/>
                             </SocialAnchor>
-                            <SocialAnchor href='https://dribbble.com/irwanphan' tooltip='dribbble'>
-                                <FiDribbble/>
+                            <SocialAnchor href='https://dev.to/irwanphan' tooltip='dev journal'>
+                                <FaDev/>
                             </SocialAnchor>
                         </HStack>
                         {/* <Box position='fixed' top={0} right={0}>{inView.toString()}</Box> */}
