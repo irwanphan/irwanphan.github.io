@@ -39,7 +39,7 @@ const AnchorMenuNav = () => {
                             {/* <SocialAnchor href='mailto:irwanphan@gmail.com' tooltip='email me'>
                                 <FiMail/>
                             </SocialAnchor> */}
-                            <SocialAnchor href='' tooltip='my playground'>
+                            <SocialAnchor href='/playground' tooltip='my playground'>
                                 <FiCpu />
                             </SocialAnchor>
                             <SocialAnchor href='https://instagram.com/irwanphan' tooltip='follow me'>

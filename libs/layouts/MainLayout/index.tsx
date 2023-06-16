@@ -8,12 +8,13 @@ import { useEffect } from "react"
 const MainLayout = ({children, ...rest}: FlexProps) => {
     return (
         <Box
-            bgColor='blue.50'
+            bgGradient='linear(to-b, cyan.50, blue.600)'
+            pb={10}
             minHeight='100vh'
             px={{base:'1rem', sm:'2rem', md:'4rem'}}
-            {...rest}
-        >
-            {/* {isLoadingCatalog && <LoadingOverlay/>} */}
+            {...rest}>
+
+            {/* {do soething && <LoadingOverlay/>} */}
             <CustomHeader />
             <AnchorMenuNav/>
 
