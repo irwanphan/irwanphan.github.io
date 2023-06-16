@@ -5,13 +5,13 @@ import { useState } from 'react'
 import fs from 'fs/promises'
 import path from "path"
 
-import SocialAnchorMenu from '@libs/components/SocialAnchorMenu'
+import AnchorMenuNav from '@layouts//AnchorMenuNav'
+import CustomHeader from '@layouts//CustomHeader'
 import BlockHeader from '@libs/components/BlockHeader'
 import BlockStudies from '@libs/components/BlockStudies'
 import BlockJourney from '@libs/components/BlockJourney'
 import BlockFounder from '@libs/components/BlockFounder'
 import BlockSkillset from '@libs/components/BlockSkillset'
-import CustomHeader from '@libs/components/CustomHeader'
 
 const Home: NextPage = ({ journey, skillset }: any) => {
   const [ studies, setStudies ] = useState(journey.studies)
@@ -26,7 +26,7 @@ const Home: NextPage = ({ journey, skillset }: any) => {
     >
       <CustomHeader />
 
-      <SocialAnchorMenu/>
+      <AnchorMenuNav/>
       <BlockHeader />
 
       <BlockStudies studies={studies} />

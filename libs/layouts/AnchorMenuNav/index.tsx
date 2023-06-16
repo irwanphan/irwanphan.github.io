@@ -1,10 +1,10 @@
 import { Box, Flex, HStack } from "@chakra-ui/react"
 import SocialAnchor from "@elements/SocialAnchor"
-import { FiMail, FiGithub, FiLinkedin, FiFeather, FiDribbble, FiInstagram } from "react-icons/fi"
+import { FiMail, FiGithub, FiLinkedin, FiFeather, FiCpu, FiDribbble, FiInstagram } from "react-icons/fi"
 import { FaDev } from "react-icons/fa"
 import { InView, useInView } from "react-intersection-observer"
 
-const SocialAnchorMenu = () => {
+const AnchorMenuNav = () => {
     const { ref, inView } = useInView({
         threshold: 0,
         rootMargin: '8rem'
@@ -36,8 +36,11 @@ const SocialAnchorMenu = () => {
                         bottom={-4} left={0} right={0}        
                         >
                         <HStack gap={{ base: 0, md: 2 }}>
-                            <SocialAnchor href='mailto:irwanphan@gmail.com' tooltip='email me'>
+                            {/* <SocialAnchor href='mailto:irwanphan@gmail.com' tooltip='email me'>
                                 <FiMail/>
+                            </SocialAnchor> */}
+                            <SocialAnchor href='' tooltip='my playground'>
+                                <FiCpu />
                             </SocialAnchor>
                             <SocialAnchor href='https://instagram.com/irwanphan' tooltip='follow me'>
                                 <FiInstagram/>
@@ -63,4 +66,4 @@ const SocialAnchorMenu = () => {
     )
 }
 
-export default SocialAnchorMenu
+export default AnchorMenuNav
