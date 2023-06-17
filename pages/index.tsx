@@ -12,6 +12,7 @@ import BlockStudies from '@libs/components/BlockStudies'
 import BlockJourney from '@libs/components/BlockJourney'
 import BlockFounder from '@libs/components/BlockFounder'
 import BlockSkillset from '@libs/components/BlockSkillset'
+import MainLayout from '@layouts/MainLayout'
 
 const Home: NextPage = ({ journey, skillset }: any) => {
   const [ studies, setStudies ] = useState(journey.studies)
@@ -20,10 +21,8 @@ const Home: NextPage = ({ journey, skillset }: any) => {
   const [ skills, setSkills ] = useState(skillset)
 
   return (
-    <Box
-      bgGradient='linear(to-b, cyan.50, blue.600)'
-      pb={10}
-    >
+    <MainLayout>
+    
       <CustomHeader />
 
       <AnchorMenuNav/>
@@ -34,7 +33,7 @@ const Home: NextPage = ({ journey, skillset }: any) => {
       <BlockJourney works={works} />
       <BlockFounder founded={founded} />
       
-    </Box>
+    </MainLayout>
   )
 }
 

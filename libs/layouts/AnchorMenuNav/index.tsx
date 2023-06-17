@@ -36,12 +36,12 @@ const AnchorMenuNav = () => {
                         bottom={-4} left={0} right={0}        
                         >
                         <HStack gap={{ base: 0, md: 2 }}>
-                            {/* <SocialAnchor href='mailto:irwanphan@gmail.com' tooltip='email me'>
+                            <SocialAnchor href='mailto:irwanphan@gmail.com' tooltip='email me'>
                                 <FiMail/>
-                            </SocialAnchor> */}
-                            <SocialAnchor href='/playground' tooltip='my playground'>
-                                <FiCpu />
                             </SocialAnchor>
+                            {/* <SocialAnchor href='/playground' tooltip='my playground'>
+                                <FiCpu />
+                            </SocialAnchor> */}
                             <SocialAnchor href='https://instagram.com/irwanphan' tooltip='follow me'>
                                 <FiInstagram/>
                             </SocialAnchor>
