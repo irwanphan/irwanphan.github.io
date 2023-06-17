@@ -25,7 +25,7 @@ const Home: NextPage = ({ journey, skillset }: any) => {
     
       <CustomHeader />
 
-      <AnchorMenuNav/>
+      {/* <AnchorMenuNav/> */}
       <BlockHeader />
 
       <BlockStudies studies={studies} />

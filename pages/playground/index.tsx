@@ -1,3 +1,4 @@
+import MapRenderer from "@components/MapRenderer"
 import BubbleContainer from "@elements/BubbleContainer"
 import IconicTitle from "@elements/IconicTitle"
 import PageSection from "@elements/Section"
@@ -11,7 +12,7 @@ const PlaygroundPage = () => {
             <PageSection>
                 <BubbleContainer>
                     <IconicTitle icon={FiMapPin} hoverColor='yellow.300'>Sight-C-Map</IconicTitle>
-
+                    <MapRenderer />
                 </BubbleContainer>
 
             </PageSection>
