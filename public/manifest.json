@@ -1,6 +1,6 @@
 {
-    "name": "Irwan Phan",
-    "short_name": "IP7",
+    "name": "Before Thunder",
+    "short_name": "BTS",
     "icons": [
       {
         "src": "/icons/android-icon-192x192.png",
@@ -15,5 +15,5 @@
     "display": "standalone",
     "orientation": "portrait",
     "scope": "/",
-    "description": "My own intro page"
+    "description": "Gotta Write Journal"
   }

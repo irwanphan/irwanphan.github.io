@@ -17,6 +17,15 @@
     ],
     "works": [
         {
+            "id": 9,
+            "active": true,
+            "title": "CTO",
+            "description": "Analyze work requirements for both private sector and government clients to ensure that the technological solutions provided are effective and meet their needs, Reviewing the tech stack developed by the team to ensure efficiency, security, and scalability. Additionally, also prepare the technical framework that supports project development and aligns with the company's business objectives.",
+            "companyName": "PT Widya Solusi Utama",
+            "startDate": "Mei 2024",
+            "endDate": null
+        },
+        {
             "id": 8,
             "active": true,
             "title": "Chief Executive",
@@ -29,9 +38,9 @@
             "id": 7,
             "active": true,
             "title": "Lecturer",
-            "description": "For Social Computing, Data Structure, and Web Development subjects.",
+            "description": "For Social Computing, Business Modelling, and Web Development subjects.",
             "companyName": "Widya Dharma University",
-            "startDate": "Agustus 2014",
+            "startDate": "Agustus 2017",
             "endDate": null
         },
         {
@@ -50,7 +59,7 @@
             "description": "Developing regional startup ecosystem as a part of Ministry of Communication and Information Technology. Create and maintain synergy in the pentahelix ecosystem through the national program with series of events.",
             "companyName": "Indonesia Ministry of Communication and Information Technology",
             "startDate": "June 2021",
-            "endDate": "December 2021"
+            "endDate": "December 2023"
         },
         {
             "id": 4,
