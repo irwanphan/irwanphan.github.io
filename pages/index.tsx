@@ -1,23 +1,23 @@
 import type { NextPage } from 'next'
-import { Box } from '@chakra-ui/react'
+// import { Box } from '@chakra-ui/react'
 import { useState } from 'react'
 
 import fs from 'fs/promises'
 import path from "path"
 
-import AnchorMenuNav from '@layouts//AnchorMenuNav'
+// import AnchorMenuNav from '@layouts//AnchorMenuNav'
 import CustomHeader from '@layouts//CustomHeader'
 import BlockHeader from '@libs/components/BlockHeader'
 import BlockStudies from '@libs/components/BlockStudies'
 import BlockJourney from '@libs/components/BlockJourney'
-import BlockFounder from '@libs/components/BlockFounder'
+// import BlockFounder from '@libs/components/BlockFounder'
 import BlockSkillset from '@libs/components/BlockSkillset'
 import MainLayout from '@layouts/MainLayout'
 
 const Home: NextPage = ({ journey, skillset }: any) => {
   const [ studies, setStudies ] = useState(journey.studies)
   const [ works, setWorks ] = useState(journey.works)
-  const [ founded, setFounded ] = useState(journey.founded)
+  // const [ founded, setFounded ] = useState(journey.founded)
   const [ skills, setSkills ] = useState(skillset)
 
   return (
@@ -31,7 +31,7 @@ const Home: NextPage = ({ journey, skillset }: any) => {
       <BlockStudies studies={studies} />
       <BlockSkillset skills={skills} />
       <BlockJourney works={works} />
-      <BlockFounder founded={founded} />
+      {/* <BlockFounder founded={founded} /> */}
       
     </MainLayout>
   )
