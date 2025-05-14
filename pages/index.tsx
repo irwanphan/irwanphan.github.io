@@ -19,6 +19,7 @@ const Home: NextPage = ({ journey, skillset }: any) => {
   const [ works, setWorks ] = useState(journey.works)
   // const [ founded, setFounded ] = useState(journey.founded)
   const [ skills, setSkills ] = useState(skillset)
+  // TODO: refactor data source
 
   return (
     <MainLayout>
